@@ -1,0 +1,58 @@
+h2 {
+  color: blueviolet;
+}
+button {
+  font-size: 50px;
+  align-items: flex-start;
+  width: 200px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+p,
+a {
+  color: rebeccapurple;
+  font-size: x-large;
+  font-weight: lighter;
+  background-color: papayawhip;
+  text-align: flex-start;
+  /* cssfontstack.com */
+  font-family: monospace;
+}
+h3 {
+  text-align: left;
+  font-weight: 900;
+  font-family: math;
+}
+h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 40px;
+  letter-spacing: 20px;
+  font-family: monospace;
+  text-decoration: purple underline wavy;
+  text-transform: uppercase;
+  color: black;
+}
+body {
+  background-color: skyblue;
+}
+/* a {
+  text-decoration: none;
+  color: rebeccapurple;
+  letter-spacing: -8px;
+  font-size: larger;
+  font-family: fantasy;
+} */
+/*  */
+#signup {
+  background-color: white;
+  color: blue;
+}
+span {
+  color: red;
+  background-color: black;
+}
+p span {
+  color: white;
+}
