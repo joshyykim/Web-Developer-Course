@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Forms Demo</h1>
+
+    <button>Outside form</button>
+
+    <form action="/tacos">
+        <p>
+            <label for="username"> Enter a Username : </label>
+            <input type="text" placeholder="Username" id="username" name="username">
+        </p>
+        <p>
+            <label for="password"> Enter a password : </label>
+            <input type="password" placeholder="Password" id="password" name="password">
+        </p>
+        <p>
+            <label for="number">Enter a Number</label>
+            <input type="number" placeholder="Enter a number" id="number" name="number" min="10" max="100" step="10"
+                value="10">
+        </p>
+        <p>
+            <button type="button">Sumbit (won't submit)</button>
+        </p>
+
+        <button>Sumbit~~~</button>
+        <input type="submit" value="clickme!">
+    </form>
+    <hr>
+    <button>Not inside Form</button>
+
+    <h2>Hijacking Searches</h2>
+    <h3>search in Reddit</h3>
+    <form action="https://www.google.com/search">
+        <label for="search"></label>
+        <input type="text" placeholder="Search in Reddit" id="search" name="q">
+        <button>Search Google</button>
+    </form>
+    <h3>search in Google</h3>
+    <form action="https://www.google.com/search">
+        <label for="search"></label>
+        <input type="text" id="search" name="q">
+        <button>Search Google</button>
+    </form>
+    <h3>search in Youtube</h3>
+    <form action="https://www.youtube.com/results?">
+        <input type="text" id="search" name="search_query">
+        <button>Search Google</button>
+    </form>
+
+    <h2>More input</h2>
+    <form action="/t-shirts">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree"> I agreed to everything </label>
+        <h3>Pick a T-shirt</h3>
+        <p>
+            <label>Choose t-shirt size</label>
+            <label for="xs">XS : </label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S : </label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M : </label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <label for="color">Choose t-shirt color</label>
+            <select name="color" id="color">
+                <option value="" selected>----Choose One----</option>
+                <option value="Red">Red</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Blue">Blue</option>
+                <option value="White">White</option>
+                <option value="Black">Black</option>
+                <option value="Green">Green</option>
+                <option value="Pink">Pink</option>
+            </select>
+        </p>
+        <p>
+            <label for="donation">Donation amount : </label>
+            <input type="range" id="donation" min="0" max="10" value="2" name="donation_amount">
+        </p>
+        <p>
+            <label for="requests"> Any special requests?</label>
+            <textarea id="requests" rows="10" cols="100" placeholder="Type something special here"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html>
