@@ -1,0 +1,69 @@
+section {
+  background-color: #6d6875;
+  width: 800px;
+  height: 800px;
+}
+
+div {
+  background-color: #e5989b;
+  width: 50%;
+  height: 30%;
+  /* percentage of width and height will be determined by parant element's size */
+}
+
+#ems h1 {
+  font-size: 50px;
+  border: 1px solid black;
+  line-height: 150%;
+}
+
+/* em & rem
+    em : 1em is equals to font-size of the parent, 2em is twice of the parent
+    -> be careful : for nested list could make awful changes (snow-balling)
+
+    rem : 1rem is equals to font-size of the 'ROOT' html
+    -> possible to be used for nested list elements
+    */
+
+#ems h2 {
+  font-size: 2em;
+  margin-left: 1em;
+}
+#ems h3 {
+  font-size: 1.5em;
+}
+#ems article {
+  font-size: 15px;
+}
+#ems button {
+  font-size: 1em;
+  padding: 0 1em;
+  background-color: aqua;
+  border-radius: 0.5em;
+}
+#ems ul {
+  font-size: 1.5em;
+}
+
+html {
+  font-size: 10px;
+}
+
+#rems h3 {
+  font-size: 2rem;
+}
+
+#rems h2 {
+  font-size: 3rem;
+}
+
+#rems ul {
+  font-size: 1.5rem;
+}
+
+#rems button {
+  font-size: 5rem;
+  padding: 0 1rem;
+  background-color: aqua;
+  border-radius: 0.5rem;
+}

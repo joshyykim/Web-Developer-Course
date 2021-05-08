@@ -1,0 +1,130 @@
+h2 {
+  color: blueviolet;
+}
+button {
+  font-size: 50px;
+  align-items: flex-start;
+  width: 200px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+p,
+a {
+  color: rebeccapurple;
+  font-size: x-large;
+  font-weight: lighter;
+  background-color: papayawhip;
+  text-align: flex-start;
+  /* cssfontstack.com */
+  font-family: monospace;
+}
+h3 {
+  text-align: left;
+  font-weight: 900;
+  font-family: math;
+}
+h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 40px;
+  letter-spacing: 20px;
+  font-family: monospace;
+  text-decoration: purple underline wavy;
+  text-transform: uppercase;
+  color: black;
+}
+body {
+  background-color: skyblue;
+}
+/* 
+a {
+  text-decoration: none;
+  color: rebeccapurple;
+  letter-spacing: -8px;
+  font-size: larger;
+  font-family: fantasy;
+} */
+/* ID selector : for unique thing not group*/
+#signup {
+  background-color: white;
+  color: blue;
+}
+/* Class selector : for group of span */
+span {
+  color: red;
+  background-color: black;
+}
+/* # Descendent selector : a b {} -> select b under a  (single space between a and b)*/
+p span {
+  color: white;
+}
+/* Adjadcent selector :  a+b {} -> select b right after a on the same level */
+p + h4 {
+  color: coral;
+  font-size: 30px;
+}
+/* Direct childs : a > b -> select b of direct child of a (single level down) */
+h3 > p {
+  font-size: 19.9px;
+  color: darkorange;
+}
+/* Attribute selector : some cases we can add some special characters like *$% to distinguish from other attribute
+also there are more detail about this -> https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors*/
+input[type="password"] {
+  color: green;
+}
+
+/*  psuedo classes : not going to apply when classes have ID */
+/* :hover -> when cursor is on them, it will get this effect */
+/* :active -> when a class currently activated like when it's clicked */
+/* :check -> when a checkbox checked it changes */
+/* :nth-of-type() -> put a integer in paranthesis and it works for specific n-th class, also could be some multiplier such as 2n, 3n for every 2 or 3*/
+/* a lot more at https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes*/
+button:hover {
+  background-color: bisque;
+  text-decoration: underline;
+  color: black;
+}
+#signup:active {
+  background-color: brown;
+}
+
+/* pseudo elements */
+
+p::first-line {
+  font-size: 30px;
+}
+h2::first-letter {
+  font-size: large;
+}
+p::selection {
+  background-color: yellowgreen;
+}
+/* Cascade : overwrite style 
+h3 {
+  color: Black;
+}
+h3 {
+  color: blue;
+} */
+
+/* specificity : prior more specific selector
+priotiry -> ID >> Class, Attribute, and Psuedo class >> Element and Pseudo element
+calculator : http://specificity.keegan.st */
+p button:hover {
+  background-color: blueviolet;
+  font-size: 10px;
+}
+
+/* inline styling -> normally avoid using this
+higher priority given than even ID selectors
+
+button {
+  background-color: magenta !important; (this !important wins every specificity)
+} */
+
+/* inheritance: possible to inherit styles from higher level*/
+/* button:hover {
+  color: inherit;
+} */

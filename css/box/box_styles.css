@@ -1,0 +1,74 @@
+div {
+  width: 200px;
+  height: 200px;
+}
+
+span {
+  margin: 30px;
+  /* not going to expand top or bottom, since it's a block element in h1 */
+}
+
+#one {
+  background-color: red;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  /* make total width and height include border */
+  box-sizing: border-box;
+}
+
+#two {
+  background-color: yellow;
+  border-color: black;
+  border-width: 3px;
+  border-style: dotted;
+  box-sizing: border-box;
+
+  margin: 50px;
+}
+
+#three {
+  background-color: green;
+  border-color: black;
+  border-width: 2px;
+  border-style: groove;
+  box-sizing: border-box;
+}
+
+#four {
+  background-color: blue;
+  /* border: width, style, color, sizing */
+  border: 4px solid white;
+  border-left-style: dashed;
+  border-right-style: dashed;
+  border-radius: 35%;
+  box-sizing: border-box;
+}
+
+h1 {
+  width: 500px;
+  background-color: aquamarine;
+  padding-top: 70px;
+  padding-left: 100px;
+  /* padding: all side
+   padding: vertical, horizontal
+   padding: top, horizontal, bottom
+   padding: top, right, bottom, left
+   relatively, for just value */
+}
+h2 {
+  width: 250px;
+  background-color: brown;
+  padding: 10px;
+  margin: 10px 20px 30px 40px;
+  /*similarily to padding
+   margin: all side
+   margin: vertical, horizontal
+   margin: top, horizontal, bottom
+   margin: top, right, bottom, left
+   relatively, for just value */
+}
+
+body {
+  margin: 0;
+}
