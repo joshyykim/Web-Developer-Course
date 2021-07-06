@@ -6,7 +6,7 @@ const ranNum = function () {
 }
 
 btn.addEventListener('click', () => {
-    color = `rgb(${ranNum()}, ${ranNum()}, ${ranNum()})`
+    const color = `rgb(${ranNum()}, ${ranNum()}, ${ranNum()})`
     document.body.style.backgroundColor = color;
     head.innerText = `${color}`
 });
