@@ -1,0 +1,30 @@
+#header {
+    font-size: 20px;
+    border: 1px solid #d6d0d0;
+    text-align: left;
+    padding: 0px 0px 0px 40px;
+}
+
+#image {
+    border: 1px solid #d6d0d0;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#text {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#matchScores {
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+button {
+    height: 80px;
+}

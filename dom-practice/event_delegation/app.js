@@ -1,10 +1,22 @@
 const tweetForm = document.querySelector('#tweetForm')
 const tweetsContainer = document.querySelector('#tweets')
 
+// failed to remove elements
+// const oldLi = document.querySelectorAll('li');
+// for (let li of oldLi) {
+//     li.addEventListener('click', function () {
+//         li.remove();
+//     })
+// }
+
+tweetsContainer.addEventListener('click', function (e) {
+    console.dir(e.target);
+    // remove only situation that clicked element is li
+    e.target.nodeName === 'LI' && e.target.remove();
+})
+
 tweetForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    // const usernameInput = document.querySelectorAll('input')[0];
-    // const tweetInput = document.querySelectorAll('input')[1];
     const usernameInput = tweetForm.elements.username
     const tweetInput = tweetForm.elements.tweet
     addTweet(usernameInput, tweetInput);
